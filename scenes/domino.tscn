@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bdq7x6dr7pgce"]
 
 [node name="Area2D" type="Area2D"]
+metadata/_edit_group_ = true
 
 [node name="attack" type="Sprite2D" parent="."]
 
