@@ -1,10 +1,38 @@
-[gd_scene format=3 uid="uid://bdq7x6dr7pgce"]
+[gd_scene load_steps=7 format=3 uid="uid://bdq7x6dr7pgce"]
+
+[ext_resource type="Texture2D" uid="uid://bxl7gnb2fwahl" path="res://assets/domino-sides/attack/1-attack.png" id="1_jo3r8"]
+[ext_resource type="Texture2D" uid="uid://lcnco3nye771" path="res://assets/domino-sides/defend/1-defend.png" id="2_deo1n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc15j"]
+atlas = ExtResource("1_jo3r8")
+region = Rect2(0, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdcid"]
+atlas = ExtResource("2_deo1n")
+region = Rect2(0, 0, 18, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p16ap"]
+size = Vector2(54, 54)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ygoeh"]
+size = Vector2(54, 53)
 
 [node name="Area2D" type="Area2D"]
+position = Vector2(25, 27)
 metadata/_edit_group_ = true
 
 [node name="attack" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_vc15j")
 
 [node name="defense" type="Sprite2D" parent="."]
+position = Vector2(0, 54)
+scale = Vector2(3, 3)
+texture = SubResource("AtlasTexture_kdcid")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="collision_attack" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_p16ap")
+
+[node name="collision_defend" type="CollisionShape2D" parent="."]
+position = Vector2(0, 54.5)
+shape = SubResource("RectangleShape2D_ygoeh")

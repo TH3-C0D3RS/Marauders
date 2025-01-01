@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://cxty10p061qkd"]
+[gd_scene load_steps=3 format=3 uid="uid://cxty10p061qkd"]
+
+[ext_resource type="PackedScene" uid="uid://b5n15pl0kpoo2" path="res://scenes/board.tscn" id="1_0rrl8"]
+[ext_resource type="PackedScene" uid="uid://bdq7x6dr7pgce" path="res://scenes/domino.tscn" id="2_5xg7e"]
 
 [node name="Node" type="Node"]
+
+[node name="GameBoard" parent="." instance=ExtResource("1_0rrl8")]
+
+[node name="Area2D" parent="." instance=ExtResource("2_5xg7e")]
+position = Vector2(427, 402)
