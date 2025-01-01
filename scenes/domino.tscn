@@ -18,14 +18,14 @@ size = Vector2(54, 54)
 size = Vector2(54, 53)
 
 [node name="Area2D" type="Area2D"]
-position = Vector2(25, 27)
+position = Vector2(27, 27)
 metadata/_edit_group_ = true
 
 [node name="attack" type="Sprite2D" parent="."]
 scale = Vector2(3, 3)
 texture = SubResource("AtlasTexture_vc15j")
 
-[node name="defense" type="Sprite2D" parent="."]
+[node name="defend" type="Sprite2D" parent="."]
 position = Vector2(0, 54)
 scale = Vector2(3, 3)
 texture = SubResource("AtlasTexture_kdcid")
