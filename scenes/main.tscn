@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cxty10p061qkd"]
 
-[ext_resource type="PackedScene" uid="uid://b5n15pl0kpoo2" path="res://scenes/board.tscn" id="1_0rrl8"]
+[ext_resource type="PackedScene" path="res://scenes/board.tscn" id="1_0rrl8"]
 [ext_resource type="PackedScene" uid="uid://bdq7x6dr7pgce" path="res://scenes/domino.tscn" id="2_5xg7e"]
 [ext_resource type="Script" path="res://scripts/test_ship.gd" id="3_h7f41"]
 [ext_resource type="Script" path="res://scripts/test_enemy_ship.gd" id="4_3yj00"]
